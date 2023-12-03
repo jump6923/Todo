@@ -1,5 +1,10 @@
 package com.sparta.todo.configuration;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sparta.todo.jwt.JwtAuthorizationFilter;
+import com.sparta.todo.jwt.JwtUtil;
+import com.sparta.todo.user.UserDetailsService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,12 +17,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.todo.jwt.JwtAuthorizationFilter;
-import com.sparta.todo.jwt.JwtUtil;
-import com.sparta.todo.user.UserDetailsService;
-import lombok.RequiredArgsConstructor;
 
 @Configuration
 @EnableWebSecurity

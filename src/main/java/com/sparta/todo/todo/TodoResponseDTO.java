@@ -1,15 +1,10 @@
 package com.sparta.todo.todo;
 
-import java.time.LocalDateTime;
-
-import com.sparta.todo.todo.Todo;
 import com.sparta.todo.CommonResponseDTO;
 import com.sparta.todo.user.UserDTO;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Setter
 @Getter

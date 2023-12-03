@@ -1,15 +1,13 @@
 package com.sparta.todo.comment;
 
-import java.util.concurrent.RejectedExecutionException;
-
-import com.sparta.todo.comment.CommentRequestDTO;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.sparta.todo.todo.Todo;
 import com.sparta.todo.todo.TodoService;
 import com.sparta.todo.user.User;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.concurrent.RejectedExecutionException;
 
 @Service
 @RequiredArgsConstructor

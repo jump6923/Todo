@@ -1,11 +1,11 @@
 package com.sparta.todo.comment;
 
-import java.time.LocalDateTime;
-
 import com.sparta.todo.CommonResponseDTO;
 import com.sparta.todo.user.UserDTO;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Setter
 @Getter

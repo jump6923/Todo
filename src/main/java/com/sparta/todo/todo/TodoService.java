@@ -1,19 +1,17 @@
 package com.sparta.todo.todo;
 
+import com.sparta.todo.user.User;
+import com.sparta.todo.user.UserDTO;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.RejectedExecutionException;
-
-import com.sparta.todo.todo.Todo;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.sparta.todo.user.User;
-import com.sparta.todo.user.UserDTO;
-import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor

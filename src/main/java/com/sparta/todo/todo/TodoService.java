@@ -1,17 +1,18 @@
 package com.sparta.todo.todo;
 
-import com.sparta.todo.user.User;
-import com.sparta.todo.user.UserDTO;
-import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.RejectedExecutionException;
+
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.sparta.todo.user.User;
+import com.sparta.todo.user.UserDTO;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
@@ -63,7 +64,7 @@ public class TodoService {
     }
 
     @Transactional
-    public TodoResponseDTO competeTodo(Long todoId, User user) {
+    public TodoResponseDTO completeTodo(Long todoId, User user) {
         Todo todo = getUserTodo(todoId, user);
 
         todo.complete(); // 완료 처리
